@@ -41,6 +41,10 @@ gem 'caracal-rails'
 gem 'libreconv'
 gem 'responders', '~> 2.3'
 gem "rename"
+gem 'capistrano', '~> 3.11'
+gem 'capistrano-rails', '~> 1.4'
+gem 'capistrano-passenger', '~> 0.2.0'
+gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
 group :production do
   gem 'pg'
@@ -66,13 +70,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'sqlite3', '~> 1.3.6'
-  gem 'capistrano',  '~> 3.4.0'
-  gem 'capistrano-passenger'
-  gem 'capistrano-rvm' # rvm support
-  gem 'capistrano-bundler' # bundle command
-  gem 'capistrano-rails' # assets and migrations
-  gem 'capistrano-faster-assets' # skips assets precompilation if not needed
-  gem 'capistrano3-git-push'
 
 end
 
